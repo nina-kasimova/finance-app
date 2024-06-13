@@ -5,7 +5,6 @@ import {goto} from "$app/navigation";
 
 <svelte:head>
     <title>Budgeting</title>
-    <meta name="description" content="Budgeting Progress" />
 </svelte:head>
 
 <div class="relative flex justify-center items-center min-h-screen md:p-8">
@@ -18,7 +17,7 @@ import {goto} from "$app/navigation";
             <div class="mt-8 grid grid-cols-4 gap-4">
                 <button class="p-8 border rounded-lg shadow-md bg-green-200">Introduction to Budgeting</button>
                 <button class="p-8 border rounded-lg shadow-md bg-green-200">Setting Financial Goals</button>
-                <button on:click={()=>goto("/quiz-example")} class="p-8 border rounded-lg shadow-md">Tracking Expenses</button>
+                <button on:click|preventDefault={()=>goto("/quiz-example")} class="p-8 border rounded-lg shadow-md">Tracking Expenses</button>
                 <button class="p-8 border rounded-lg shadow-md">Creating a Budget Plan</button>
                 <button class="p-8 border rounded-lg shadow-md">Adjusting Your Budget</button>
                 <button class="p-8 border rounded-lg shadow-md">Saving Strategies</button>
