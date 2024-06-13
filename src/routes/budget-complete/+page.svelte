@@ -1,6 +1,6 @@
 <script>
     // You can add any necessary script here
-import {goto} from "$app/navigation";
+    import {goto} from "$app/navigation";
 </script>
 
 <svelte:head>
@@ -11,14 +11,14 @@ import {goto} from "$app/navigation";
 <div class="relative flex justify-center items-center min-h-screen md:p-8">
     <div class="md:p-8 w-full md:w-2/3">
         <div class="min-h-[100vh] h-full flex flex-col">
-            <h1 class="text-2xl font-semibold mb-4">Budgeting - 2/12</h1>
+            <h1 class="text-2xl font-semibold mb-4">Budgeting - 3/12</h1>
             <div class="w-full bg-gray-200 h-4 rounded-full mt-2">
                 <div class="bg-blue-500 h-4 rounded-full" style="width: 16.67%;"></div>
             </div>
             <div class="mt-8 grid grid-cols-4 gap-4">
                 <button class="p-8 border rounded-lg shadow-md bg-green-200">Introduction to Budgeting</button>
                 <button class="p-8 border rounded-lg shadow-md bg-green-200">Setting Financial Goals</button>
-                <button on:click={()=>goto("/quiz-example")} class="p-8 border rounded-lg shadow-md">Tracking Expenses</button>
+                <button class="p-8 border rounded-lg shadow-md bg-green-200">Tracking Expenses</button>
                 <button class="p-8 border rounded-lg shadow-md">Creating a Budget Plan</button>
                 <button class="p-8 border rounded-lg shadow-md">Adjusting Your Budget</button>
                 <button class="p-8 border rounded-lg shadow-md">Saving Strategies</button>
