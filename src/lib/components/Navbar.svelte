@@ -17,9 +17,9 @@
         <div class="flex flex-wrap items-center justify-between w-full lg:w-auto">
             <a href="/">
 				<span class="flex items-center space-x-2 text-2xl font-medium text-indigo-500">
-<!--					<span>-->
-<!--						<img src="/img/MinefieldLogo2.svg" alt="N" class="w-8" width="32" height="32" />-->
-<!--					</span>-->
+					<span>
+						<img src="/img/logo.html" alt="N" class="w-8" width="32" height="32" />
+					</span>
 					<span>SheCanMoney</span>
 				</span>
             </a>
