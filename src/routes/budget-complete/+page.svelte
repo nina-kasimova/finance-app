@@ -29,6 +29,14 @@
                 <button class="p-8 border rounded-lg shadow-md">Tax Planning</button>
                 <button class="p-8 border rounded-lg shadow-md">Reviewing Your Budget</button>
             </div>
+            <div class="flex justify-center mt-8">
+                <button
+                        class="px-8 py-4 bg-blue-300 border rounded-lg shadow-md hover:bg-blue-500"
+                        on:click={() => goto("/progress-learning")}
+                >
+                    Complete Course
+                </button>
+            </div>
         </div>
     </div>
 </div>

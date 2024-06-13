@@ -2,6 +2,7 @@
 	// import Counter from './Counter.svelte';
 	// import welcome from '$lib/images/svelte-welcome.webp';
 	// import welcome_fallback from '$lib/images/svelte-welcome.png';
+import {goto} from "$app/navigation";
 </script>
 
 <svelte:head>
@@ -10,41 +11,23 @@
 </svelte:head>
 
 
-<div class="relative flex justify-center items-center min-h-screen md:p-8">
-	<div class="md:p-8 w-full md:w-2/3">
-		<div class="min-h-[100vh] h-full flex flex-col">
-			<p>We are here to help you manage finances</p>
+<!--<div class="relative flex justify-center items-center min-h-screen md:p-8">-->
+<!--	<div class="md:p-8 w-full md:w-2/3">-->
+<!--		<div class="min-h-[100vh] h-full flex flex-col">-->
+<!--			<p>We are here to help you manage finances</p>-->
 
+<!--		</div>-->
+<!--	</div>-->
+<!--</div>-->
+
+
+<div class="relative flex justify-center items-center min-h-screen">
+	<div class="text-center">
+		<h1 class="text-5xl font-bold mb-4">We'll help you learn finances easily and fun</h1>
+		<p class="text-xl mb-8">Personal finance tools can help women overcome their unique financial hurdles.</p>
+		<div class="flex justify-center space-x-4">
+			<button on:click={()=> goto("/register")} class="px-8 py-4 bg-green-200 border rounded-lg shadow-md hover:bg-green-300">Join now</button>
+			<button on:click={()=> goto("/about")} class="px-8 py-4 bg-green-200 border rounded-lg shadow-md hover:bg-green-300">Learn more</button>
 		</div>
 	</div>
 </div>
-
-<style>
-	section {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		flex: 0.6;
-	}
-
-	h1 {
-		width: 100%;
-	}
-
-	.welcome {
-		display: block;
-		position: relative;
-		width: 100%;
-		height: 0;
-		padding: 0 0 calc(100% * 495 / 2048) 0;
-	}
-
-	.welcome img {
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		top: 0;
-		display: block;
-	}
-</style>
