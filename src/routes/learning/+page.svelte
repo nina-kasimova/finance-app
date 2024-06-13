@@ -1,5 +1,6 @@
 <script>
 
+import {goto} from "$app/navigation";
 </script>
 
 <svelte:head>
@@ -12,7 +13,7 @@
         <div class="min-h-[100vh] h-full flex flex-col">
             <h1 class="text-2xl font-semibold mb-4">Your courses</h1>
             <div class="flex flex-col items-left">
-                <button class="w-48 p-4 border rounded-lg shadow-md hover:bg-blue-200">
+                <button on:click={()=> goto("/savings")} class="w-48 p-4 border rounded-lg shadow-md hover:bg-blue-200">
                     <div class="flex justify-between items-center">
                         <span>In progress</span>
                         <div class="w-8 h-8 bg-green-200 rounded-full"></div>
