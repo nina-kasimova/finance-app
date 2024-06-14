@@ -15,9 +15,9 @@
         <!-- Logo  -->
         <div class="flex flex-wrap items-center justify-between w-full lg:w-auto">
             <a href="/">
-        <span class="flex items-center space-x-2 text-2xl font-medium text-indigo-500">
+        <span class="flex items-center space-x-1 text-2xl font-medium text-indigo-500">
           <span>
-            <img src="/img/logo.html" alt="N" class="w-8 h-8 rounded-full bg-pink-200" />
+            <img src="/img/logo.png" alt="N" class="w-32 h-16" />
           </span>
           <span>SheCanMoney</span>
         </span>
